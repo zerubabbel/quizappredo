@@ -1,0 +1,15 @@
+.headers {
+	text-align: center;
+	font-family: sans-serif;
+	background-color: #C0C0C0; 
+	color: WHITE; 
+}
+
+#writtenQuestion {
+	font-family: sans-serif;
+	color: #C0C0C0;
+}
+
+#reviewSection {
+	display: none;
+}
