@@ -47,10 +47,10 @@ function restart(){
 	$("#writtenQuestion").text(questions[questionNumber].question);//create a variable that isolates the choices
 var questionData=$.each(questions[questionNumber].choices, function(index, value){value});
 //take out the entire "mainsection" label
-$("fieldset#mainSection label").remove();
+$(".answerChoices li label").remove();
 //put in the new label
 $.each(questionData, function(index, value){
-$("fieldset#mainSection").append("<label class='radio'><input type='radio' name='check' data-ans=" + index +">" + value + "</label>");
+$(".answerChoices").append("<li><label class='radio'><input type='radio' name='check' data-ans=" + index +">" + value + "</label></li>");
 });
 
 }
@@ -85,10 +85,10 @@ $("#writtenQuestion").text(questions[questionNumber].question);
 //create a variable that isolates the choices
 var questionData=$.each(questions[questionNumber].choices, function(index, value){value});
 //take out the entire "mainsection" label
-$("fieldset#mainSection label").remove();
+$(".answerChoices li label").remove();
 //put in the new label
 $.each(questionData, function(index, value){
-$("fieldset#mainSection").append("<label class='radio'><input type='radio' name='check' data-ans=" + index +">" + value + "</label>");
+$(".answerChoices").append("<li><label class='radio'><input type='radio' name='check' data-ans=" + index +">" + value + "</label></li>");
 });
 }
 
